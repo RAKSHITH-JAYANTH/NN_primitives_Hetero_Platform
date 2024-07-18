@@ -3,13 +3,13 @@
 #include <chrono>
 #include <algorithm>
 
-const int N = 1000; // Matrix size
-const int BLOCK_SIZE = 50; // Block size
+const int N = 1024;
+const int BLOCK_SIZE = 32;
 
 void initializeMatrix(std::vector<std::vector<int>>& matrix) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            matrix[i][j] = i + j; // Simple initialization
+            matrix[i][j] = i + j;
         }
     }
 }

@@ -4,8 +4,8 @@
 #include <pthread.h>
 #include <cmath>
 
-const int N = 1000; // Larger size for better demonstration
-const int BLOCK_SIZE = 50;
+const int N = 1024;
+const int BLOCK_SIZE = 32;
 const int NUM_THREADS = 4;
 
 struct ThreadData {
@@ -21,7 +21,7 @@ struct ThreadData {
 void initializeMatrix(std::vector<std::vector<int>>& matrix) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            matrix[i][j] = i + j; // Simple initialization
+            matrix[i][j] = i + j;
         }
     }
 }
